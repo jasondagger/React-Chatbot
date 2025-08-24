@@ -4,26 +4,7 @@ import ChatMessages from './components/ChatMessages'
 import './App.css'
 
 function App() {
-    const [chatMessages, setChatMessages] = useState([{
-        message: "hello chatbot",
-        sender: "user",
-        id: "id1"
-    },
-        {
-            message: "hello! How can I help you?",
-            sender: "chatbot",
-            id: "id2"
-        },
-        {
-            message: "can you get me todays date?",
-            sender: "user",
-            id: "id3"
-        },
-        {
-            message: "Today is August 19",
-            sender: "chatbot",
-            id: "id4"
-        }]);
+    const [chatMessages, setChatMessages] = useState([]);
 
     return <div className="app-container">
         <ChatMessages
